@@ -10,6 +10,9 @@ spec:
   source:
     helm:
       releaseName: application-from-helm
+      parameters:
+        - name: "replicaCount"
+          value: "3"
     path: 03/helm/nginx
     repoURL: https://github.com/Thnnathat/argocd.git
     targetRevision: main 
